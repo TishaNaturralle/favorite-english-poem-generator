@@ -60,6 +60,10 @@ footer{
     margin-bottom: 10px;
 }
 
+.poem strong{
+    color: #af15e2;
+}
+
 .submit-button{
     border:none;
     border-radius: 10px;
