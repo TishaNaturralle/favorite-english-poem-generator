@@ -11,8 +11,35 @@ a{
     max-width: 600px;
 }
 
+.blink{
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+
 Header{
     margin-bottom: 30px;
+}
+
+.hint{
+    color: white;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+.hidden{
+display: none;
 }
 
 h1{
@@ -24,11 +51,14 @@ h1{
 }
 
 form{
-    padding: 30px;
+   display: flex;
+}
+
+.form-container{
+    padding: 15px 20px;
     background-color: rgb(90, 85, 85);
     border: none;
     border-radius: 10px;
-    display: flex;
 }
 
 footer{
